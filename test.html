@@ -1,0 +1,371 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+      body {
+        background-color: #f0f3f5;
+      }
+      .sidebar {
+        background-color: white;
+        width: -webkit-calc(18.75em);
+        border-radius: 10px;
+      }
+      .sidebar_links {
+        padding: 0.33rem;
+        font-size: 1.7vh;
+        font-weight: 400;
+        text-align: start;
+      }
+      .dash {
+        font-weight: 600;
+        display: inline;
+      }
+      .icon {
+        margin-right: 12px;
+      }
+      a {
+        text-decoration: none;
+        margin-left: 1rem;
+        color: black;
+      }
+
+      .search_bar {
+        display: inline;
+        position: relative;
+        margin-left: 85vh;
+      }
+      .search_bar > input {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: -130px;
+        border: none;
+        padding: 10px;
+        height: 4vh;
+        border-radius: 8px;
+        background: #e3e6fe;
+      }
+      .hey_lily > h1 {
+        display: inline;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+
+        /* Grey/Dark */
+
+        color: #424344;
+      }
+      .hey_lily > h4 {
+        margin-top: 14px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+
+        /* Grey/Light */
+
+        color: #707070;
+      }
+
+      .sidebar_links:hover {
+        background-color: #5263d6;
+      }
+      .quick_actions {
+        background-color: white;
+        height: 55%;
+        border-radius: 10px;
+      }
+      .quick_actions > h2 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        /* Grey/Dark */
+
+        color: #424344;
+      }
+      .quick_actions > .actions > button {
+        border: none;
+        color: blue;
+        height: 25px;
+        border-radius: 5px;
+        margin-top: 0px;
+        margin-left: 40px;
+      }
+
+      .div1 {
+        display: inline-block;
+      }
+      .div2 {
+        display: inline-block;
+        width: -webkit-calc(90% - 20em);
+      }
+      /* .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100%;
+      } */
+
+      /* .div1 {
+        grid-area: 1 / 1 / 6 / 2;
+
+        height: 100%;
+      }
+      .div2 {
+        grid-area: 1 / 2 / 2 / 6;
+        padding: 10px;
+
+        height: 100%;
+      }
+      .div3 {
+        grid-area: 2 / 2 / 3 / 6;
+        border-style: solid;
+        border-color: black;
+        height: 100%;
+      }
+      .div4 {
+        grid-area: 3 / 2 / 4 / 6;
+        border-style: solid;
+        border-color: black;
+        height: 100%;
+      }
+      .div5 {
+        grid-area: 4 / 2 / 6 / 6;
+        border-style: solid;
+        border-color: black;
+        height: 100%;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="div1">
+        <div class="sidebar">
+          <div class="siderbar_heading">
+            <div class="dash">Dash</div>
+            <img src="assets/icon/notification.svg" alt="" />
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/Home.svg"
+                alt="logo_dash"
+              />Home</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/Inbox.svg"
+                alt="logo_dash"
+              />Inbox</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/Search.svg"
+                alt="logo_dash"
+              />Search</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img class="icon" src="assets/Icon/add.svg" alt="logo_dash" />New
+              Feedback</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/Arrow.svg"
+                alt="main boards"
+              />Main boards</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/roadmap.svg"
+                alt="main boards"
+              />Main boards</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/note.svg"
+                alt="main boards"
+              />Release Notes</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/add.svg"
+                alt="main boards"
+              />Add view</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/Arrow.svg"
+                alt="main boards"
+              />Design boards</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/design.svg"
+                alt="main boards"
+              />Design system</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/design.svg"
+                alt="main boards"
+              />Dash Design Team</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/dash.svg"
+                alt="main boards"
+              />Dash 2.0</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/add.svg"
+                alt="main boards"
+              />Add View</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/Arrow.svg"
+                alt="main boards"
+              />Developer</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/flower-1.svg"
+                alt="main boards"
+              />Front end</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/backend.svg"
+                alt="main boards"
+              />Back end</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/bug.svg"
+                alt="main boards"
+              />Bugs</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/add.svg"
+                alt="main boards"
+              />Add View</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/Arrow.svg"
+                alt="main boards"
+              />Other views</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/emoji/target.svg"
+                alt="main boards"
+              />Target</a
+            >
+          </div>
+          <div class="sideBar_links">
+            <a href="#">
+              <img
+                class="icon"
+                src="assets/Icon/add.svg"
+                alt="main boards"
+              />Add View</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="div2">
+        <div class="hey_lily">
+          <h1>Hey Lily!</h1>
+          <div class="search_bar">
+            <input type="text" placeholder="Search" />
+          </div>
+          <h4>Heres whats happning in your workspace</h4>
+        </div>
+        <div class="quick_actions">
+          <h2>Quick Actions</h2>
+          <div class="actions">
+            <button>Create view</button>
+            <button>Create view</button>
+            <button>Create view</button>
+            <button>Create view</button>
+          </div>
+        </div>
+      </div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+    </div>
+  </body>
+</html>
